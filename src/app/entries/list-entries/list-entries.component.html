@@ -1,0 +1,40 @@
+<div class="row header">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="journal-header">
+      <span class="journal-detail"> 
+        <h3> {{journal.title}} </h3>
+        <p> {{entries.length}} total entry | Created on Date </p>
+      </span>
+      <span class="activity-buttons">
+        <button class="btn btn-default">Setting</button>
+        <button routerLink='../new' class="btn btn-primary">New Entry</button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="row list">
+  <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <!-- <div class="panel-heading">Panel heading</div> -->
+        
+          <!-- Table -->
+          <div class="col-md-8 col-md-offset-2">
+          <table class="table">
+            <tr>
+              <th>Entry</th>
+              <th>Date Created</th>
+            </tr>
+            <tr *ngFor="let entry of entries" >
+              <td> 
+                <strong>{{entry.title}} </strong>
+                <p>Content</p>
+              </td>
+              <td> {{entry.date}} </td>
+            </tr>
+          </table>
+        </div>
+        </div>
+  <!-- </div> -->
+</div>

@@ -1,0 +1,11 @@
+.journal{
+    border: 2px solid red;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.journal-config{
+    border: 2px solid black;
+    padding: 20px
+}

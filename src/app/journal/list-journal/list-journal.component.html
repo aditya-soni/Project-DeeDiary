@@ -1,0 +1,13 @@
+<!-- <div class="container"> -->
+    <div class="row list">
+      <div class="col-md-8 col-md-offset-2">
+        <span class="journal-count" >Displaying {{journals.length}} Journals </span> 
+        <button type="button" routerLink='./new' class="btn btn-primary">
+          New Journal
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <app-journal-detail [journal]="journal" *ngFor="let journal of journals" ></app-journal-detail>
+    </div>
+  <!-- </div> -->
